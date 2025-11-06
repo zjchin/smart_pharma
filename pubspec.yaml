@@ -39,6 +39,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  # Flutter sample icon set (you already have this)
+  cupertino_icons: ^1.0.8
+
+  # --- add these for your model download + storage + hashing ---
+  dio: ^5.7.0                 # HTTP client (download .gguf with progress)
+  path_provider: ^2.1.4       # get app Documents directory to store the model
+  shared_preferences: ^2.3.2  # remember model path + version
+  crypto: ^3.0.3              # compute SHA-256 to verify the file
+
+  # --- add this to run GGUF locally via llama.cpp ---
+  llama_cpp: ^1.2.0
+
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
